@@ -1,5 +1,7 @@
 FROM python:3.9-alpine
 
+LABEL org.opencontainers.image.source https://github.com/wasv/supysonic-docker
+
 RUN apk --no-cache add ffmpeg lame mpg123 vorbis-tools flac git
 ARG SUPYSONIC_VERSION
 ENV SUPYSONIC_VERSION=${SUPYSONIC_VERSION:-0.6.2}
