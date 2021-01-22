@@ -46,5 +46,5 @@ jobs:
         with:
           build-args: SUPYSONIC_VERSION=master
           tags: |
-            ghcr.io/${{ github.actor }}/supysonic:shapshot
+            ghcr.io/${{ github.actor }}/supysonic:snapshot
           push: true
