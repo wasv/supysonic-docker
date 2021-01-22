@@ -15,5 +15,6 @@ WORKDIR /app
 COPY ./app /app
 COPY supysonic.conf /etc/supysonic
 
+ENV HOME /app
 EXPOSE 8000
 CMD ["/app/entrypoint.sh"]
